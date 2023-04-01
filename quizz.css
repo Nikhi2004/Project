@@ -1,0 +1,73 @@
+ *{
+    padding: 0;
+    margin: 0;
+ }
+ body{
+    background: url(web2.jpg) no-repeat;
+    background-size: cover;
+    
+
+ }
+ .login-form{
+    width: 375px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    columns: #fff;
+    background: url(ki.jpg)no-repeat;
+    
+ }
+ .login-form h1{
+    font-size: 40px;
+    
+    
+    text-transform: uppercase;
+    margin: 40px 0;
+
+ }
+ .login-form p{
+    font-size: 20px;
+    margin: 15px 0;
+    
+ }
+.login-form input{
+    font-size: 16px;
+    width:100%;
+    padding: 10px 5px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    left: 40%;
+}
+.login-form button{
+    font-size: 18px;
+    font-weight: bold;
+    
+    padding: 10px ;
+    width: 50%;
+    border-radius: 5px;
+    
+}
+.input{
+   width: 60px;
+   left: 60%;
+   right: 40%;
+
+}
+.forgot_password{
+   outline: none;
+}
+.quiz{
+   outline: none;
+   padding: 10px;
+   border-radius: 5px;
+   background-color:orange;
+   width: 55px;
+   margin-left: 75%;
+   margin-top: 20%;
+   text-align: center;
+   font-size: 25px;
+
+   
+}

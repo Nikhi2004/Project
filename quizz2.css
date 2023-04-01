@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(bin3.jpg);
+    background-size: cover;
+
+
+}
+#rule{
+    margin-top: 250px;
+    
+    position: absolute;
+    
+    font-style: italic ;
+
+    background-color: chocolate;
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 20px;
+      text-decoration: none;
+    color: black;
+   border-color: black;
+
+
+}
+
+.button-2{
+    margin-top: 400px;
+    position: absolute;
+    font-style: italic;
+    background-color:chocolate;
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 20px;
+}

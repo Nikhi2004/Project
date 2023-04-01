@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="quizz.css">
+</head>
+<body>
+    <div class="login-form">
+        <h1>Login-form</h1>
+        <form action="#" method="post">
+            <p>User name</p>
+            <div class="input" ></div>
+            <input type="text" name="user" placeholder="User name">
+            
+            
+  
+            <p>Password</p>
+            <input type="Password" name="Password" placeholder="Password">
+            <div class="forgot_password"><a href="#">Forgot Password?</a></div>
+            
+            
+           <p> <button type="submit">Login</button> </p>
+           
+        </form>
+
+
+    </div>
+    
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js"; 
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+   
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAO98RuKGC5sjLDq1y-fLnH3Dm5jD0hILM",
+      authDomain: "quizing-website.firebaseapp.com",
+      projectId: "quizing-website",
+      storageBucket: "quizing-website.appspot.com",
+      messagingSenderId: "460113067279",
+      appId: "1:460113067279:web:cd2e68a3acf8eaaa02927a",
+      measurementId: "G-0RE6GD5CPP"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+    signup.addeventlistner('click',(e) =>{
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      // var username = document.getElementById('username').value;
+
+ 
+
+
+signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log(errorCode);
+    alert(errorCode);
+  });
+  });
+  
+    
+    
+  </script>
+
+</html>

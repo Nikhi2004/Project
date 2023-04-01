@@ -1,0 +1,61 @@
+ *{
+    padding: 0;
+    margin: 0;
+ }
+ body{
+   background-image:url(qui.jpg) ;
+   background: cover;
+ }
+
+   
+      
+ 
+ 
+ 
+ .container{
+   
+   width: 350px;
+   top: 50%;
+   left: 50%;
+   position: absolute;
+   transform: translate(-50%,-50%);
+   background-color: #fff;
+
+   
+   
+   
+   padding: 25px 25px 45px 25px;
+   border-radius: 20px;
+   width: 200px;
+   height: 300px;
+   
+ } 
+ h2{
+   
+   font-size: 40px;
+   text-align: center;
+   text-transform: uppercase;
+
+   
+ }
+ p{
+   font-size: 20px;
+   font-style: italic;
+   margin-top: 15px;
+   margin-bottom: 5px;
+   
+   
+ }
+ .container button{
+   width: 100%;
+   font-size: 25px;
+   margin-top: 15%;
+   background-color:red;
+   border-radius: 5px;
+
+ }
+ .password_checkbox{
+   display: flex;
+   justify-content: flex-end;
+   text-align: right;
+ }
